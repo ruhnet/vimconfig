@@ -49,6 +49,7 @@ Plugin 'crusoexia/vim-javascript-lib'
 Plugin 'myhere/vim-nodejs-complete'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'terryma/vim-smooth-scroll'
 
 
 " All of your Plugins must be added before the following line
@@ -68,9 +69,13 @@ filetype plugin indent on    " required
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
+noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
+noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
 set history=1000
-
+	
 map <F5> :setlocal spell! spelllang=en_us<CR>
 map <F3> "=system(genpassword)<C-M>
 
