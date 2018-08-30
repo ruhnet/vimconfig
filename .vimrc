@@ -44,7 +44,8 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 
-
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'crusoexia/vim-javascript-lib'
 Plugin 'myhere/vim-nodejs-complete'
 Plugin 'othree/javascript-libraries-syntax.vim'
@@ -79,7 +80,7 @@ set history=1000
 map <F5> :setlocal spell! spelllang=en_us<CR>
 map <F3> "=system(genpassword)<C-M>
 
-set laststatus=2
+"set laststatus=2
 
 "set background=dark
 
@@ -92,25 +93,25 @@ hi User6 ctermfg=DarkGreen ctermbg=DarkGray
 hi User7 ctermfg=DarkMagenta ctermbg=DarkGray
 hi User8 ctermfg=Black ctermbg=DarkGray
 hi User9 ctermfg=LightGray ctermbg=DarkGray
-hi statusline ctermfg=DarkGray 		
+"hi statusline ctermfg=DarkGray 		
 " ctermbg=Black
 
    
-set statusline=
-set statusline +=%2*\ [%1*%n%2*]\ %*      	"buffer number
-set statusline +=%6*%{&ff}%*      	"file format
-set statusline +=%7*%y\ %*          	"file type
-set statusline +=\|%*%3*%<%F%*\|%* 	"full path
-"set statusline+=%-40f\           	"path 
-"set statusline +=\ %2*%m%*         	"modified flag
-set statusline +=\ %2*%h%m%r%w%*	"flags" 
-set statusline +=%=			"RIGHT align
-set statusline +=%5*\[0x%02B\ %03b\]%* 	"character under cursor
-set statusline +=%2*\ \[%*%1*%{v:register}%*%2*\]%*	"which copy/paste buffer active
-set statusline +=\ \ %2*(%*%9*%v\ %*        		"virtual column number
-set statusline +=%l        	"current line
-set statusline +=%2*/%L)%*          	"total lines
-set statusline +=%3p%%                	"percentage of file
+"set statusline=
+"set statusline +=%2*\ [%1*%n%2*]\ %*      	"buffer number
+"set statusline +=%6*%{&ff}%*      	"file format
+"set statusline +=%7*%y\ %*          	"file type
+"set statusline +=\|%*%3*%<%F%*\|%* 	"full path
+""set statusline+=%-40f\           	"path 
+""set statusline +=\ %2*%m%*         	"modified flag
+"set statusline +=\ %2*%h%m%r%w%*	"flags" 
+"set statusline +=%=			"RIGHT align
+"set statusline +=%5*\[0x%02B\ %03b\]%* 	"character under cursor
+"set statusline +=%2*\ \[%*%1*%{v:register}%*%2*\]%*	"which copy/paste buffer active
+"set statusline +=\ \ %2*(%*%9*%v\ %*        		"virtual column number
+"set statusline +=%l        	"current line
+"set statusline +=%2*/%L)%*          	"total lines
+"set statusline +=%3p%%                	"percentage of file
 
     
 
