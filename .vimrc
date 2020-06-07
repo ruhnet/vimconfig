@@ -27,12 +27,13 @@ nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>7GA
 nnoremap ,sig :-1read $HOME/.signature<CR>k
 
 
-
-	if &term =~ "xterm"
-	"let &t_SI = "\<Esc>]12;purple\x7"
-	let &t_SI = "\<Esc>]12;green\x7"	"insert mode
-	let &t_SR = "\<Esc>]12;red\x7"		"replace mode
-	let &t_EI = "\<Esc>]12;white\x7"	"normal mode
+	if version >= 800
+		if &term =~ "xterm"
+			"let &t_SI = "\<Esc>]12;purple\x7"
+			let &t_SI = "\<Esc>]12;green\x7"	"insert mode
+			let &t_SR = "\<Esc>]12;red\x7"		"replace mode
+			let &t_EI = "\<Esc>]12;white\x7"	"normal mode
+		endif
     endif
 
 colorscheme monokai
@@ -116,7 +117,7 @@ noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
 set history=1000
 
-map <F5> :setlocal spell! spelllang=en_us<CR>
+map <F8> :setlocal spell! spelllang=en_us<CR>
 map <F3> "=system(genpassword)<C-M>
 
 
