@@ -26,9 +26,8 @@ nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>7GA
 " Signature file:
 nnoremap ,sig :-1read $HOME/.signature<CR>k
 
-
 	if version >= 800
-		if &term =~ "xterm"
+		if &term =~ "xterm" || "screen" || "screen-256color"
 			"let &t_SI = "\<Esc>]12;purple\x7"
 			let &t_SI = "\<Esc>]12;green\x7"	"insert mode
 			let &t_SR = "\<Esc>]12;red\x7"		"replace mode
@@ -78,9 +77,11 @@ Plugin 'myhere/vim-nodejs-complete'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'terryma/vim-smooth-scroll'
-Plugin 'fatih/vim-go'
 Plugin 'morhetz/gruvbox'
 Plugin 'tpope/vim-fugitive'
+if version >= 801
+	Plugin 'fatih/vim-go'
+endif
 
 
 " All of your Plugins must be added before the following line
