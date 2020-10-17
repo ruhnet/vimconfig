@@ -79,6 +79,8 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'terryma/vim-smooth-scroll'
 Plugin 'morhetz/gruvbox'
 Plugin 'tpope/vim-fugitive'
+Plugin 'pangloss/vim-javascript'
+Plugin 'elixir-editors/vim-elixir'
 if version >= 801
 	Plugin 'fatih/vim-go'
 endif
