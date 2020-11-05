@@ -81,6 +81,9 @@ Plugin 'morhetz/gruvbox'
 Plugin 'tpope/vim-fugitive'
 Plugin 'pangloss/vim-javascript'
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'slashmili/alchemist.vim'
+Plugin 'prabirshrestha/vim-lsp'
+
 if version >= 801
 	Plugin 'fatih/vim-go'
 endif
@@ -134,6 +137,14 @@ nnoremap <F7> :set list<CR>
 inoremap <F7> <ESC>:set list<CR>a
 
 set pastetoggle=<F2>
+
+" Toggle relative line number
+nmap <C-L><C-L> :set invrelativenumber<CR>
+
+
+
+
+set guifont=Iosevka\ Ultra-Light\ 15
 
 "set laststatus=2
 
