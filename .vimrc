@@ -25,6 +25,8 @@ nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>7GA
 
 " Signature file:
 nnoremap ,sig :-1read $HOME/.signature<CR>k
+nnoremap ,srn :-1read $HOME/.signature_ruhnet<CR>k
+
 
 	if version >= 800
 		if &term =~ "xterm" || "screen" || "screen-256color"
@@ -83,6 +85,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'elixir-editors/vim-elixir'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'prabirshrestha/vim-lsp'
+Plugin 'Yggdroot/indentLine'
 
 if version >= 801
 	Plugin 'fatih/vim-go'
@@ -114,6 +117,10 @@ let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_operators = 1
+
+let g:indentLine_char = '|'
+"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
