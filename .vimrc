@@ -121,7 +121,18 @@ let g:go_highlight_operators = 1
 let g:indentLine_char = '|'
 "let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
+"let g:tex_fold_enabled=0
+let g:tex_conceal = ""
+"let g:tex_conceal = "admgs" " <--- default
+"	a = accents/ligatures
+"	b = bold and italic
+"	d = delimiters
+"	m = math symbols
+"	g = Greek
+"	s = superscripts/subscripts
 
+	
+	
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
 noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
