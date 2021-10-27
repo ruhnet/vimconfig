@@ -86,6 +86,8 @@ Plugin 'elixir-editors/vim-elixir'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'prabirshrestha/vim-lsp'
 Plugin 'Yggdroot/indentLine'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'mhinz/vim-mix-format'
 
 if version >= 801
 	Plugin 'fatih/vim-go'
