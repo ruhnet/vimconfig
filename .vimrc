@@ -87,8 +87,12 @@ Plugin 'slashmili/alchemist.vim'
 Plugin 'prabirshrestha/vim-lsp'
 Plugin 'Yggdroot/indentLine'
 Plugin 'mhinz/vim-mix-format'
+"Plugin 'dense-analysis/ale'
 
-if version >= 801
+"Plugin 'neoclide/coc.nvim', { 'branch': 'release' }
+"Plugin 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
+
+if version >= 8.3
 	Plugin 'fatih/vim-go'
 	Plugin 'sheerun/vim-polyglot'
 endif
@@ -119,6 +123,8 @@ let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_operators = 1
+
+let g:ale_fixers = { 'elixir': ['mix_format'] }
 
 let g:indentLine_char = '|'
 "let g:indentLine_char_list = ['|', '¦', '┆', '┊']
@@ -161,6 +167,8 @@ set pastetoggle=<F2>
 " Toggle relative line number
 nmap <C-L><C-L> :set invrelativenumber<CR>
 
+"nmap <silent> gd <Plug>(coc-definition)
+"nmap <silent> gr <Plug>(coc-references)
 
 
 
