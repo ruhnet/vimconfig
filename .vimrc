@@ -87,10 +87,10 @@ Plugin 'slashmili/alchemist.vim'
 Plugin 'prabirshrestha/vim-lsp'
 Plugin 'Yggdroot/indentLine'
 Plugin 'mhinz/vim-mix-format'
-"Plugin 'dense-analysis/ale'
+Plugin 'dense-analysis/ale'
 
-"Plugin 'neoclide/coc.nvim', { 'branch': 'release' }
-"Plugin 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
+Plugin 'neoclide/coc.nvim', { 'branch': 'release' }
+Plugin 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
 
 if version >= 803
 	Plugin 'fatih/vim-go'
@@ -167,8 +167,8 @@ set pastetoggle=<F2>
 " Toggle relative line number
 nmap <C-L><C-L> :set invrelativenumber<CR>
 
-"nmap <silent> gd <Plug>(coc-definition)
-"nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-references)
 
 
 
