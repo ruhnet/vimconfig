@@ -92,7 +92,7 @@ Plugin 'mhinz/vim-mix-format'
 "Plugin 'neoclide/coc.nvim', { 'branch': 'release' }
 "Plugin 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
 
-if version >= 8.3
+if version >= 803
 	Plugin 'fatih/vim-go'
 	Plugin 'sheerun/vim-polyglot'
 endif
